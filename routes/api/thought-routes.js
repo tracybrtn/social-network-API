@@ -1,5 +1,8 @@
 const router = require('express').Router();
+const {
+  //import controllers
+} = require('../../controllers/thought-controllers');
 
-//import controllers
+
 
 module.exports = router;
