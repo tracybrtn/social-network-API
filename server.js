@@ -11,6 +11,8 @@ app.use(express.json());
 app.use(routes);
 
 
-app.listen(PORT, () => {
-  console.log(`🌍 Connected on localhost:${PORT}`);
+db.once("open", () => {
+  app.listen(PORT, () => {
+    console.log(`🌍 Connected on localhost:${PORT}`);
+    });
 });
