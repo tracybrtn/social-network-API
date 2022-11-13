@@ -2,7 +2,7 @@
 
 ![Badge](https://img.shields.io/badge/License-MIT-lightblue.svg)
 
-![Trying Routes on Insomnia](https://github.com/tracybrtn/social-network-API/blob/4f9fd144b8ee6feb91af0bc3d42a25e481f9d515/assets/Images/Insomnia-Routes-Screenshot.png)
+![Trying Routes on Insomnia](https://github.com/tracybrtn/social-network-API/blob/7bc070adf3105a410b7ea16c30ef044ad0104c08/assets/Images/Insomnia-Routes-Screenshot.png)
 
 ## Description
 
