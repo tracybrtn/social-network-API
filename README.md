@@ -2,6 +2,8 @@
 
 ![Badge](https://img.shields.io/badge/License-MIT-lightblue.svg)
 
+![Trying Routes on Insomnia](https://github.com/tracybrtn/social-network-API/blob/4f9fd144b8ee6feb91af0bc3d42a25e481f9d515/assets/Images/Insomnia-Routes-Screenshot.png)
+
 ## Description
 
 API build for a social network web app where users can share their thoughts, react to friends' thoughts, and create a friend list. Uses Express.js, MongoDB, and the Mongoose ODM.
@@ -60,4 +62,3 @@ Not applicable at the moment
 
 If you have any questions about this project, contact me at tracynburton@gmail.com.
 Don't forget to check out my other projects! Visit [my github](https://github.com/tracybrtn).
-
