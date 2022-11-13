@@ -56,6 +56,7 @@ const thoughtController = {
       })
       .catch(err => res.status(400).json(err));
   },
+
   //delete a thought
   deleteThought({ params }, res) {
     Thought.findOneAndDelete({ _id: params.id })
@@ -64,10 +65,16 @@ const thoughtController = {
           res.status(404).json({ message: 'No thought found with this id!' });
           return;
         }
-        res.json({message: 'Thought deleted!'});
+        return User.findOneAndUpdate(
+          { username: dbThoughtData.username },
+          { $pull: { thoughts: params.id } },
+          { new: true }
+        )
       })
+      .then(res.json({message: 'Thought deleted!'}))
       .catch(err => res.status(400).json(err));
   },
+
   //create a reaction
   addReaction({ params, body }, res) {
     Thought.findOneAndUpdate(
@@ -84,6 +91,7 @@ const thoughtController = {
       })
       .catch((err) => res.status(400).json(err));
   },
+  
   //delete reaction
   deleteReaction({ params }, res) {
     Thought.findOneAndUpdate(
